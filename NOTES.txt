@@ -1,0 +1,38 @@
+- git clone https://github.com/ZakariaOB/VueJsTraining.git
+
+- git remote add origin https://github.com/ZakariaOB/VueJsTraining.git
+
+- To install vue Cli globally we have to use : npm install -g vue-cli
+- To start the repo : Just close and reopen the repository
+- vue create vue-app-sample
+- this keyword is helping to access to : 
+      - Objects inside data
+      - Methods inside methods
+- v-on:input : The will pass an event to changeTitle method inside the vueJs methos => Vanilla javascript // TODO => Check
+- All what we have on methods is accessible also in the html part 
+- No {{}} on html elements
+- <a href="{{link}}" /> => <a v-bind:href="link" /> (v:bind:href is a directive)
+- One way binding => v-once directive .
+- To show html content => directive v-html
+- Check computed properties 
+- watch => Should match a property in the data section => Detect changes of this property .
+- Recheck styling with CSS .
+- v-show && v-if
+- v-model directive to use two way binding in VueJs .
+- vue init webpack-simple vue-cli
+- .vue file got compiled during the build process
+- You can use .app or #app .
+- Problem with the shared data object => Lecture 93 .
+- npm install vue-cli-service => Important to run the project
+- npm run serve
+- Registering components locally and globally .
+- The data object should be encapsulated inside a function
+- render: h => h(App) => the h function use the App vue using the export object .
+- components could be used locally and globally .
+- How to declare a component :
+    - using 'components' property inside the export default object .
+    - Vue.component('cmp') => Declare the component globally .
+- Naming convention => appUser: User => <app-user></app-user> as a component .
+- npm install bootstrap jquery popper.js --save
+- npm install sass-loader --save-dev
+- npm install --save-dev node-sass
