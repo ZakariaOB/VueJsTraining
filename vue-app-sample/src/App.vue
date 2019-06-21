@@ -1,26 +1,34 @@
 <template>
     <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <app-user></app-user>
-            </div>
-        </div>
+        <app-new-quote @quoteAdded="addNewQuote"></app-new-quote>
+        <app-quote-grid :quotes="quotes"></app-quote-grid>
     </div>
 </template>
 
 <script>
-    import User from './components/user/User.vue';
-
+    import QuoteGrid from './components/quote/QuoteGrid.vue';
+    import NewQuote from './components/quote/NewQuote.vue';
     export default {
+        data: function() {
+            return {
+                'quotes': [
+                    'Quote 1 to do',
+                    'Quote 2 to do',
+                    'Quote 3 to do'
+                ]
+            }
+        },
+        methods: {
+            addNewQuote(quote) {
+                this.quotes.push(quote);
+            }
+        },
         components: {
-            appUser: User
+            appQuoteGrid: QuoteGrid,
+            appNewQuote: NewQuote
         }
     }
 </script>
 
 <style>
-    div.component {
-        border: 1px solid black;
-        padding: 30px;
-    }
 </style>

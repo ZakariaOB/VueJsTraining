@@ -36,3 +36,13 @@
 - npm install bootstrap jquery popper.js --save
 - npm install sass-loader --save-dev
 - npm install --save-dev node-sass
+
+- Slot : If you have en element on the parent component it will have the style on the child component .
+- Slot are great and easy .
+- Dynamic omponent : <component :is="selectedComponent"></component>
+- You can keep your component alive using => <keep-alive></keep-alive> 
+- click.prevent => Inside a form it will not allow to submit the form 
+- Recheck sending data using @emit => 
+    - child component : @emit 
+    - parent componet will place a listner => <comp @whatIsemitte: "do som" ... />
+    - Check udemy for more info
